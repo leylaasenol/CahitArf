@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cahit Arf - Modern Türk Matematiğinin Öncüsü</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Inter font-ailesini Tailwind'e varsayılan olarak ekleyelim */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Kahraman bölümü için ince bir arkaplan deseni */
+        .hero-pattern {
+            background-color: #ffffff;
+            background-image: radial-gradient(#d1d5db 0.5px, transparent 0.5px),
+            radial-gradient(#d1d5db 0.5px, #ffffff 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-gray-800 antialiased">
+
+    <!-- Header / Navigasyon -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto max-w-6xl px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-900">
+                <a href="#hero">Cahit Arf</a>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#hayat" class="text-gray-600 hover:text-indigo-700 transition-colors duration-300">Hayatı</a>
+                <a href="#katkilar" class="text-gray-600 hover:text-indigo-700 transition-colors duration-300">Katkıları</a>
+                <a href="#miras" class="text-gray-600 hover:text-indigo-700 transition-colors duration-300">Mirası</a>
+                <a href="#sozleri" class="text-gray-600 hover:text-indigo-700 transition-colors duration-300">Sözleri</a>
+            </div>
+            <div class="md:hidden">
+                <!-- Mobil menü (basitlik için şimdilik eklenmedi) -->
+                <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Ana İçerik -->
+    <main>
+
+        <!-- Hero Bölümü -->
+        <section id="hero" class="hero-pattern">
+            <div class="container mx-auto max-w-6xl px-6 py-24 md:py-32 flex flex-col md:flex-row items-center gap-12">
+                <!-- Metin İçeriği -->
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 leading-tight">
+                        Cahit Arf
+                    </h1>
+                    <p class="mt-4 text-2xl md:text-3xl font-medium text-indigo-700">
+                        Modern Türk Matematiğinin Öncüsü
+                    </p>
+                    <p class="mt-6 text-lg text-gray-600 max-w-lg mx-auto md:mx-0">
+                        Dünya çapında tanınan bir dahi, cebir ve sayılar teorisine yaptığı paha biçilmez katkılarla bilim tarihimize adını altın harflerle yazdırdı.
+                    </p>
+                    <a href="#hayat" class="mt-10 inline-block bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-indigo-800 transition-all duration-300 transform hover:scale-105">
+                        Daha Fazla Bilgi Edinin
+                    </a>
+                </div>
+                <!-- Görsel -->
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-80 h-80 md:w-96 md:h-96">
+                        <div class="absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full shadow-2xl transform rotate-3"></div>
+                        <img src="https://placehold.co/400x400/E0E7FF/3730A3?text=Cahit+Arf" 
+                             alt="[Cahit Arf'ın bir portresi]" 
+                             class="relative w-full h-full object-cover rounded-full border-8 border-white shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hayatı Bölümü -->
+        <section id="hayat" class="py-24 bg-white">
+            <div class="container mx-auto max-w-5xl px-6">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">
+                    Bir Dehanın Yolculuğu
+                </h2>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3 flex-shrink-0">
+                        <img src="https://placehold.co/400x500/F3F4F6/333?text=Cahit+Arf+(Gençlik)" 
+                             alt="[Cahit Arf'ın gençlik yıllarından bir fotoğraf]" 
+                             class="rounded-xl shadow-xl w-full object-cover">
+                    </div>
+                    <div class="md:w-2/3 space-y-6 text-gray-700 text-lg leading-relaxed">
+                        <p>
+                            1910 yılında Selanik'te doğan Cahit Arf, ailesiyle birlikte İstanbul'a, ardından Ankara'ya ve son olarak İzmir'e göç etti. Matematiğe olan ilgisi lise yıllarında parladı ve ailesi tarafından Fransa'ya, Paris'teki St. Louis Lisesi'ne gönderildi.
+                        </p>
+                        <p>
+                            Efsanevi <span class="font-bold text-indigo-700">École Normale Supérieure</span>'de yükseköğrenimini tamamladıktan sonra Türkiye'ye döndü. Galatasaray Lisesi'nde öğretmenlik yaptıktan sonra İstanbul Üniversitesi Fen Fakültesi'nde doçent adayı olarak görev aldı.
+                        </p>
+                        <p>
+                            Doktorasını yapmak için Almanya'ya, <span class="font-bold text-indigo-700">Göttingen Üniversitesi</span>'ne gitti. Burada, 20. yüzyılın en büyük matematikçilerinden biri olan <span class="font-semibold">Helmut Hasse</span> ile çalıştı. Doktorası, "Hasse-Arf Teoremi" olarak bilinen önemli bir sonuç içeriyordu.
+                        </p>
+                        <p>
+                            Akademik kariyeri boyunca İstanbul Üniversitesi, ODTÜ ve ABD'de Princeton gibi prestijli kurumlarda görev yaptı. Aynı zamanda <span class="font-bold">TÜBİTAK</span>'ın kuruluşunda ve gelişmesinde kilit rol oynadı.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Katkıları Bölümü -->
+        <section id="katkilar" class="py-24 bg-slate-50">
+            <div class="container mx-auto max-w-5xl px-6">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">
+                    Matematik Dünyasına Armağanları
+                </h2>
+                <div class="grid md:grid-cols-2 gap-10">
+                    <!-- Arf Değişmezi Kartı -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+                        <h3 class="text-2xl font-bold text-indigo-800 mb-4">Arf Değişmezi (Arf Invariant)</h3>
+                        <p class="text-gray-600 mb-6">
+                            Cahit Arf'ın uluslararası alanda en çok bilinen çalışmasıdır. Topoloji ve cebirsel geometri alanlarında, özellikle kuadratik formların sınıflandırılmasında kullanılan temel bir araçtır. Bu keşfi, onun adını dünya matematik literatürüne silinmez bir şekilde kazımıştır.
+                        </p>
+                        <div class="bg-gray-800 text-white p-6 rounded-lg font-mono text-center text-lg shadow-inner">
+                            [ Arf(q) ∈ ℤ₂ ]
+                            <br>
+                            <span class="text-sm text-gray-400">(Arf Değişmezinin Simgesel Gösterimi)</span>
+                        </div>
+                    </div>
+
+                    <!-- Hasse-Arf Teoremi Kartı -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+                        <h3 class="text-2xl font-bold text-indigo-800 mb-4">Hasse-Arf Teoremi</h3>
+                        <p class="text-gray-600 mb-6">
+                            Doktora tezi sırasında Helmut Hasse ile birlikte geliştirdiği bu teorem, dallanma teorisinde (ramification theory) önemli bir yer tutar. Sayılar teorisi ve cebirsel geometri arasındaki derin ilişkileri aydınlatan güçlü bir sonuçtur.
+                        </p>
+                        <img src="https://placehold.co/400x200/3730A3/FFFFFF?text=Matematiksel+Denklemler" 
+                             alt="[Matematiksel formülleri temsil eden bir görsel]" 
+                             class="w-full h-auto rounded-lg object-cover mt-12">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mirası Bölümü -->
+        <section id="miras" class="py-24 bg-white">
+            <div class="container mx-auto max-w-5xl px-6">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">
+                    Türkiye'ye Adanmış Bir Miras
+                </h2>
+                <div class="flex flex-col md:flex-row items-center gap-12 bg-slate-50 p-10 rounded-xl shadow-lg">
+                    <!-- 10 TL Banknotu -->
+                    <div class="md:w-1/2 flex-shrink-0">
+                        <img src="https://placehold.co/600x300/166534/FFFFFF?text=10+Türk+Lirası+Banknotu" 
+                             alt="[10 Türk Lirası banknotunun arka yüzünde Cahit Arf portresi]" 
+                             class="rounded-lg shadow-xl w-full object-contain">
+                    </div>
+                    <!-- Miras Metni -->
+                    <div class="md:w-1/2 space-y-6">
+                        <h3 class="text-3xl font-bold text-gray-900">10 Liranın Arkasındaki Bilge</h3>
+                        <p class="text-gray-700 text-lg">
+                            Cahit Arf'ın portresi, 2009 yılından bu yana 10 Türk Lirası banknotlarının arka yüzünü süslemektedir. Bu, onun sadece bilimsel bir deha değil, aynı zamanda Türkiye için ulusal bir gurur kaynağı ve sembol olduğunun da bir göstergesidir.
+                        </p>
+                        <h3 class="text-3xl font-bold text-gray-900 mt-8">Bilim ve Teknoloji Öncüsü</h3>
+                        <p class="text-gray-700 text-lg">
+                            Arf, sadece teorik çalışmalarla kalmamış, Türkiye'nin bilimsel altyapısının kurulmasına da önderlik etmiştir. <span class="font-bold">TÜBİTAK</span>'ın ilk bilim kurulu başkanı olarak, ülkenin araştırma ve geliştirme vizyonunun temellerini atmıştır.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sözleri Bölümü -->
+        <section id="sozleri" class="py-24 bg-indigo-800 text-white hero-pattern" style="background-image: none; background-color: #3730a3;">
+            <div class="container mx-auto max-w-4xl px-6 text-center">
+                <svg class="w-16 h-16 mx-auto mb-6 text-indigo-300" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 3C5.03 3 1 6.58 1 11c0 2.42 1.21 4.58 3.09 6.03L3 18.5v-3.08C1.2 14.12 0 12.18 0 10c0-5.52 4.48-10 10-10s10 4.48 10 10c0 5.52-4.48 10-10 10h-.08C6.58 20 3 18.97 3 18.97v-1.92c1.78.7 3.8.97 5.92.97 4.97 0 9-3.58 9-8s-4.03-8-9-8zm0 2c3.87 0 7 2.69 7 6s-3.13 6-7 6-7-2.69-7-6 3.13-6 7-6z" clip-rule="evenodd" />
+                    <path d="M7 9a1 1 0 011-1h4a1 1 0 110 2H8a1 1 0 01-1-1z" />
+                </svg>
+                <h2 class="text-4xl font-bold text-center mb-12">
+                    Arf'ın Kendi Sözleriyle...
+                </h2>
+                <blockquote class="text-2xl md:text-3xl italic font-light leading-relaxed">
+                    "Matematik esas olarak sabır olayıdır. Belleyerek değil, keşfederek anlamak gerekir."
+                </blockquote>
+                <p class="mt-6 text-xl font-semibold">- Cahit Arf</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto max-w-6xl px-6 text-center">
+            <p>Bu sayfa, büyük Türk matematikçisi Cahit Arf'ın (1910-1997) anısına hazırlanmıştır.</p>
+            <p class="mt-2 text-sm">&copy; 2025. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
